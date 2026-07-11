@@ -1,0 +1,312 @@
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1f2933;
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f5f7fa;
+}
+
+.intro {
+  width: 50%;
+}
+
+.login-box {
+  width: 30%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1f2933;
+  color: white;
+  border: none;
+}
+
+
+.services {
+  padding: 40px;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px;
+}
+
+
+.extra {
+  padding: 40px;
+  background-color: #e5e7eb;
+  text-align: center;
+}
+
+
+.footer {
+  background-color: #1f2933;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}  */
+
+
+
+/* Minimal custom styles for any overrides */
+/* .hero {
+  min-height: 60vh;
+}
+
+.services .card {
+  transition: none; 
+}
+
+.why-choose-us ul li {
+  margin-bottom: 10px;
+} */
+
+/* Custom styles for Atomize-inspired minimalism */
+/* body {
+  font-family: 'Inter', sans-serif; 
+}
+.hero {
+  background-color: #ffffff;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.navbar-brand {
+  color: #007bff !important;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+} */
+
+/* Home.css - Premium Glassmorphism Design */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 1) 0%, rgba(15, 23, 42, 1) 100%);
+  color: white;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.05) 50%, transparent 100%);
+  animation: rotateGlow 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Glassmorphism Cards */
+.service-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  transition: all 0.75s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.5);
+}
+
+.service-card:hover::after {
+  left: 200%;
+}
+
+.feature-icon {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 50%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-icon:hover {
+  transform: translateY(-8px) rotate(10deg);
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Custom modern buttons inside cards */
+.btn-orange {
+  background: linear-gradient(135deg, #ff6b00, #ff8c00);
+  border: none;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
+}
+
+.btn-orange::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.btn-orange:hover {
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 0, 0.6);
+}
+
+.btn-orange:hover::before {
+  opacity: 1;
+}
+
+.btn-outline-orange {
+  color: #ff6b00;
+  border: 2px solid #ff6b00;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-orange:hover {
+  background: linear-gradient(135deg, #ff6b00, #ff8c00);
+  border-color: transparent;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+}
+
+/* Text & typography */
+.text-orange {
+  background: linear-gradient(135deg, #ff6b00, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* FULL PAGE IMAGE / Hero adjustments */
+.page-bg {
+  background-image: linear-gradient(
+      rgba(15, 23, 42, 0.8),
+      rgba(15, 23, 42, 0.6),
+      rgba(15, 23, 42, 0.95)
+    ),
+    url("../assets/img/vsb-home-img.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.services {
+  padding: 100px 0;
+}
